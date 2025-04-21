@@ -8,7 +8,7 @@
 **Respuesta:**  
 - Conectarse a equipos remotos para tareas administrativas.  
 - Copiar datos de forma segura.  
-- Tunelizar datos de otras aplicaciones por un canal seguro.  
+- nos permite hacer configuraciones remotas de forma segura  
 *Fuente: pág. 4*
 
 ---
