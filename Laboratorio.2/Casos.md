@@ -30,7 +30,7 @@ La misma empresa nos ha pedido copiar la carpeta de inventarios de la empresa la
 
 ### Captura de Pantalla
 - **Proceso de copia de la carpeta de inventarios:**
-- 
+  
   ![image](https://github.com/user-attachments/assets/6d68101d-ef50-4fbf-8088-829ca7157d29)
 
 
@@ -46,7 +46,7 @@ La misma empresa nos ha pedido copiar el archivo `inventarioEnero.xls` que se en
 
 ### Captura de Pantalla
 - **Proceso de copia del archivo `inventarioEnero.xls`:**
-- 
+  
 ![image](https://github.com/user-attachments/assets/b05486c4-7043-416e-94b8-792857befb9c)
 
 
@@ -62,7 +62,7 @@ Se nos ha pedido subir una actualización referente a la página web de la empre
 
 ### Captura de Pantalla
 - **Proceso de subida de la actualización:**
-- 
+ 
 ![image](https://github.com/user-attachments/assets/7d75d437-6c24-449d-889d-1cc8a0cf9281)
 
 
