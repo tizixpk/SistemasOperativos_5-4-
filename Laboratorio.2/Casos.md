@@ -13,7 +13,7 @@ La empresa para la cual trabajamos, nos ha pedido reiniciar el servicio de apach
  ![image](https://github.com/user-attachments/assets/773ae71a-877c-47fc-82cd-c1979178c456)
 
 
-3. **Reinicio del servidor Apache (es necesario ser root):**
+2. **Reinicio del servidor Apache (es necesario ser root):**
 
 ![image](https://github.com/user-attachments/assets/934d2370-c19b-428b-b81c-aa841f36e7c6)
 
