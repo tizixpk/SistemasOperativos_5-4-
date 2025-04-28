@@ -1,4 +1,4 @@
-# cuestionario-laboratorio-ssh.docx
+# Cuestionario  Laboratorio SHH 
 
 **Autor: Tiziano Pirez Elias Rod 5°4**
 
