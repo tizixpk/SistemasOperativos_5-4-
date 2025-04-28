@@ -79,9 +79,8 @@ Se nos ha pedido subir una actualización referente a la página web de la empre
 ### Captura de Pantalla
 - **Proceso de subida de la actualización usando SFTP:**
 
-  ![image](https://github.com/user-attachments/assets/d8171b5b-6f62-4e27-bc59-f197e428014d)
----
-  ![image](https://github.com/user-attachments/assets/48d39ed5-4de3-490a-b9b8-611c3143ecf2)
+ ![image](https://github.com/user-attachments/assets/fdebbc7e-099d-422d-b282-c77a9106499b)
 
 
+(sin querer puse actualizacion.txt.txt y era index.html pero 
 ---
