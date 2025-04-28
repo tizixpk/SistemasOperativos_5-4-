@@ -7,7 +7,7 @@
 ### Paso 1: Iniciar sesión en su servidor
 
 ---
-![image](https://github.com/user-attachments/assets/8d8ae7ee-a3e5-4f21-8863-7a14b4e704e8)
+![image](https://github.com/user-attachments/assets/68a75981-526d-4ce4-9a41-a34446768c96)
 
 ---
 
