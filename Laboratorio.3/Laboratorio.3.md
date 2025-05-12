@@ -1,6 +1,4 @@
-
-````
-# Laboratorio: Administración de usuarios y grupos  
+# Laboratorio 3 : Administración de usuarios y grupos  
 **Autor:** Tiziano Pirez  
 **Curso:** 5to 4ta  
 
