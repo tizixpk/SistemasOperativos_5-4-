@@ -52,7 +52,9 @@ echo "einstime:einstime" | sudo chpasswd
 ### ¿Qué ocurre al loguearse?
 
 No tiene entorno completo ni archivos personales; es útil para usuarios con permisos limitados, por ejemplo, scripts automatizados o tareas de sistema.
-📸 ![image](https://github.com/user-attachments/assets/578e65cc-0958-4bc5-8872-148657409fdd)
+
+📸 
+![image](https://github.com/user-attachments/assets/578e65cc-0958-4bc5-8872-148657409fdd)
 
 
 ---
