@@ -16,12 +16,11 @@ echo "justine:stargate" | sudo chpasswd
 
 Verificación:
 
-```bash
-ls /home
 ```
+ls /home
 
-📸 *screenshot*
-
+```
+📸 ![image](https://github.com/user-attachments/assets/458b6ef8-dec8-4223-b0c9-ef1faab33f56)
 ---
 
 ## 2. Crear usuario kornuser con otro shell por defecto
@@ -38,7 +37,8 @@ cat /etc/shells
 su - kornuser
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/13a8e107-e416-430e-a8ee-6e11b1a87e49)
+
 
 ---
 
@@ -52,7 +52,8 @@ echo "einstime:einstime" | sudo chpasswd
 ### ¿Qué ocurre al loguearse?
 
 No tiene entorno completo ni archivos personales; es útil para usuarios con permisos limitados, por ejemplo, scripts automatizados o tareas de sistema.
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/578e65cc-0958-4bc5-8872-148657409fdd)
+
 
 ---
 
@@ -78,7 +79,8 @@ Verificación:
 sudo passwd -S venus
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/f9265e27-6199-44cb-ac31-a838bed0175a)
+
 
 ---
 
@@ -90,7 +92,8 @@ sudo passwd -d serena
 sudo cat /etc/shadow | grep serena
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/c3244300-49da-4acb-ab0f-529853f9c4a1)
+
 
 ---
 
@@ -109,7 +112,8 @@ passwd
 ```
 
 Descripción: Aparece error porque no tiene contraseña activa.
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/9df2fb79-4f1c-44fc-96e9-cb13765d2f43)
+
 
 ---
 
@@ -121,7 +125,8 @@ sudo groupadd football
 sudo groupadd sports
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/c4ef6ebd-8fc5-4513-b300-4d705f6d4e52)
+
 
 ---
 
@@ -132,7 +137,8 @@ sudo usermod -g tennis venus
 sudo usermod -a -G sports venus
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/ad1e3aa3-60f7-4294-859b-d95e6a877f50)
+
 
 ---
 
@@ -142,7 +148,8 @@ sudo usermod -a -G sports venus
 sudo groupmod -n foot football
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/911b927e-cca0-4dd0-be24-9e13beba78d9)
+
 
 ---
 
@@ -152,7 +159,8 @@ sudo groupmod -n foot football
 id serena
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/58d67e99-6fdd-4075-b190-e1d6bb52b9dc)
+
 
 ---
 
@@ -162,7 +170,8 @@ id serena
 sudo chage -M 10 serena
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/49c4c753-139c-41ce-bedc-25d9323e93f1)
+
 
 ---
 
@@ -172,7 +181,8 @@ sudo chage -M 10 serena
 sudo chage -W 4 kornuser
 ```
 
-📸 *screenshot*
+📸 ![image](https://github.com/user-attachments/assets/514ee705-49e2-4179-ae22-b4a213597db1)
+
 
 ```
 
