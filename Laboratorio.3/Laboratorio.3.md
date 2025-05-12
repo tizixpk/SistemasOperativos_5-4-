@@ -188,5 +188,5 @@ sudo chage -W 4 kornuser
 
 ```
 
-¿Querés que también lo suba a un archivo `.md` para descargar o pegar directamente en GitHub?
+
 ```
