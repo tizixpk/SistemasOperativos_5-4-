@@ -23,11 +23,15 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo useradd kevin
   ```
 
+![image](https://github.com/user-attachments/assets/ccaf9e70-3f4a-40de-adf8-58d318aac683)
+
 * **Verificar su existencia en el archivo `/etc/passwd`:**
 
   ```bash
   cat /etc/passwd | grep kevin
   ```
+![image](https://github.com/user-attachments/assets/b28011de-3573-43ce-b967-fcdc749fe288)
+
 
 * **Iniciar sesión como `kevin` y mostrar su información con `id`:**
 
@@ -35,6 +39,9 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   su - kevin
   id
   ```
+
+![Uploading image.png…]()
+
 
 * **Crear el usuario `mitnick` con un UID específico y su propio grupo:**
 
