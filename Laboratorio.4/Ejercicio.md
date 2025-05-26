@@ -23,14 +23,16 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo useradd kevin
   ```
 
-![image](https://github.com/user-attachments/assets/ccaf9e70-3f4a-40de-adf8-58d318aac683)
+     ![image](https://github.com/user-attachments/assets/ccaf9e70-3f4a-40de-adf8-58d318aac683)
+  
 
 * **Verificar su existencia en el archivo `/etc/passwd`:**
 
   ```bash
   cat /etc/passwd | grep kevin
   ```
-![image](https://github.com/user-attachments/assets/b28011de-3573-43ce-b967-fcdc749fe288)
+  
+     ![image](https://github.com/user-attachments/assets/b28011de-3573-43ce-b967-fcdc749fe288)
 
 
 * **Iniciar sesión como `kevin` y mostrar su información con `id`:**
@@ -40,7 +42,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   id
   ```
 
-![image](https://github.com/user-attachments/assets/ecb5db66-592c-40e7-94e6-504113a1117c)
+   ![image](https://github.com/user-attachments/assets/ecb5db66-592c-40e7-94e6-504113a1117c)
 
 
 * **Crear el usuario `mitnick` con un UID específico y su propio grupo:**
@@ -49,7 +51,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo useradd -u 1050 -G mitnick mitnick
   ```
 
-![image](https://github.com/user-attachments/assets/b96b56f5-af4e-4e29-a03f-0b96a42904a4)
+  ![image](https://github.com/user-attachments/assets/b96b56f5-af4e-4e29-a03f-0b96a42904a4)
 
 * **Asignar contraseña a `mitnick`:**
 
@@ -57,7 +59,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo passwd mitnick
   ```
 
-![image](https://github.com/user-attachments/assets/499596e8-ad30-4634-9719-be701ab9f567)
+  ![image](https://github.com/user-attachments/assets/499596e8-ad30-4634-9719-be701ab9f567)
 
 
 * **Crear el grupo `agentes`:**
@@ -66,7 +68,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo groupadd agentes
   ```
 
-  ![image](https://github.com/user-attachments/assets/b7988a02-6595-439f-8574-3fc856cf286e)
+    ![image](https://github.com/user-attachments/assets/b7988a02-6595-439f-8574-3fc856cf286e)
 
 * **Añadir a `kevin` y `mitnick` al grupo `agentes`:**
 
@@ -75,7 +77,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo usermod -aG agentes mitnick
   ```
 
-![image](https://github.com/user-attachments/assets/1fe056b9-1f3c-40e0-a1f8-b6eba0a6aefb)
+   ![image](https://github.com/user-attachments/assets/1fe056b9-1f3c-40e0-a1f8-b6eba0a6aefb)
 
 * **Hacer que `mitnick` sea el administrador del grupo `agentes`:**
 
@@ -83,7 +85,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo gpasswd -A mitnick agentes
   ```
 
-![image](https://github.com/user-attachments/assets/3813b25c-ff38-491c-b599-3dad4f0ea6ca)
+  ![image](https://github.com/user-attachments/assets/3813b25c-ff38-491c-b599-3dad4f0ea6ca)
 
 ---
 
@@ -98,7 +100,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   groups mitnick
   ```
 
-![image](https://github.com/user-attachments/assets/f3853218-2130-4d6a-852f-4789b0b4894d)
+    ![image](https://github.com/user-attachments/assets/f3853218-2130-4d6a-852f-4789b0b4894d)
 
 * **Crear un archivo `primero` como `kevin`, cambiarle el grupo a `agentes`:**
 
@@ -108,7 +110,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   chgrp agentes primero
   ```
 
-  ![image](https://github.com/user-attachments/assets/7aab6526-c5df-4016-a139-653cbf9447d3)
+    ![image](https://github.com/user-attachments/assets/7aab6526-c5df-4016-a139-653cbf9447d3)
 
 * **Cambiar el grupo principal de `kevin` a `agentes`:**
 
@@ -116,7 +118,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo usermod -g agentes kevin
   ```
 
-![image](https://github.com/user-attachments/assets/99d7049c-7ba6-4aa1-8c0c-a11da28a8742)
+  ![image](https://github.com/user-attachments/assets/99d7049c-7ba6-4aa1-8c0c-a11da28a8742)
 
 * **Crear un archivo `segundo`, cambiarle el grupo a `kevin`:**
 
@@ -125,7 +127,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   chgrp kevin segundo
   ```
 
-![image](https://github.com/user-attachments/assets/4fd0a1e2-9a81-4e5e-a12d-91617e4e35b2)
+  ![image](https://github.com/user-attachments/assets/4fd0a1e2-9a81-4e5e-a12d-91617e4e35b2)
 
 * **Restaurar el grupo principal de `kevin` a `kevin`:**
 
@@ -133,7 +135,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo usermod -g kevin kevin
   ```
   
-![image](https://github.com/user-attachments/assets/a9922bbd-af32-45f7-91b5-b86207b06042)
+  ![image](https://github.com/user-attachments/assets/a9922bbd-af32-45f7-91b5-b86207b06042)
 
 ---
 
@@ -149,7 +151,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   chmod 600 archivo_sensible
   ```
 
-  ![image](https://github.com/user-attachments/assets/4cd43d9f-dd15-4f3f-905c-7fc52f80a106)
+    ![image](https://github.com/user-attachments/assets/4cd43d9f-dd15-4f3f-905c-7fc52f80a106)
 
 
 * **Como `mitnick`, intentar acceder al archivo:**
