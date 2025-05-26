@@ -40,7 +40,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   id
   ```
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/ecb5db66-592c-40e7-94e6-504113a1117c)
 
 
 * **Crear el usuario `mitnick` con un UID específico y su propio grupo:**
@@ -49,17 +49,24 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo useradd -u 1050 -G mitnick mitnick
   ```
 
+![image](https://github.com/user-attachments/assets/b96b56f5-af4e-4e29-a03f-0b96a42904a4)
+
 * **Asignar contraseña a `mitnick`:**
 
   ```bash
   sudo passwd mitnick
   ```
 
+![image](https://github.com/user-attachments/assets/499596e8-ad30-4634-9719-be701ab9f567)
+
+
 * **Crear el grupo `agentes`:**
 
   ```bash
   sudo groupadd agentes
   ```
+
+  ![image](https://github.com/user-attachments/assets/b7988a02-6595-439f-8574-3fc856cf286e)
 
 * **Añadir a `kevin` y `mitnick` al grupo `agentes`:**
 
@@ -68,11 +75,15 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo usermod -aG agentes mitnick
   ```
 
+![image](https://github.com/user-attachments/assets/1fe056b9-1f3c-40e0-a1f8-b6eba0a6aefb)
+
 * **Hacer que `mitnick` sea el administrador del grupo `agentes`:**
 
   ```bash
   sudo gpasswd -A mitnick agentes
   ```
+
+![image](https://github.com/user-attachments/assets/3813b25c-ff38-491c-b599-3dad4f0ea6ca)
 
 ---
 
@@ -87,6 +98,8 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   groups mitnick
   ```
 
+![image](https://github.com/user-attachments/assets/f3853218-2130-4d6a-852f-4789b0b4894d)
+
 * **Crear un archivo `primero` como `kevin`, cambiarle el grupo a `agentes`:**
 
   ```bash
@@ -95,11 +108,15 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   chgrp agentes primero
   ```
 
+  ![image](https://github.com/user-attachments/assets/7aab6526-c5df-4016-a139-653cbf9447d3)
+
 * **Cambiar el grupo principal de `kevin` a `agentes`:**
 
   ```bash
   sudo usermod -g agentes kevin
   ```
+
+![image](https://github.com/user-attachments/assets/99d7049c-7ba6-4aa1-8c0c-a11da28a8742)
 
 * **Crear un archivo `segundo`, cambiarle el grupo a `kevin`:**
 
@@ -108,11 +125,15 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   chgrp kevin segundo
   ```
 
+![image](https://github.com/user-attachments/assets/4fd0a1e2-9a81-4e5e-a12d-91617e4e35b2)
+
 * **Restaurar el grupo principal de `kevin` a `kevin`:**
 
   ```bash
   sudo usermod -g kevin kevin
   ```
+  
+![image](https://github.com/user-attachments/assets/a9922bbd-af32-45f7-91b5-b86207b06042)
 
 ---
 
@@ -127,6 +148,9 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   echo "Contenido sensible" > archivo_sensible
   chmod 600 archivo_sensible
   ```
+
+  ![image](https://github.com/user-attachments/assets/4cd43d9f-dd15-4f3f-905c-7fc52f80a106)
+
 
 * **Como `mitnick`, intentar acceder al archivo:**
 
