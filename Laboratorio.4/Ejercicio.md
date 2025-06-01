@@ -194,6 +194,8 @@
   sudo useradd -m adele
   sudo usermod -aG agentes adele
   ```
+     ![image](https://github.com/user-attachments/assets/4d707a4f-6a20-4596-acb9-41ff1d8664d3)
+
 
 * **Crear el directorio `/expedientes` y asignarlo a `mitnick` y grupo `agentes`:**
 
@@ -201,6 +203,8 @@
   sudo mkdir /expedientes
   sudo chown mitnick:agentes /expedientes
   ```
+    ![image](https://github.com/user-attachments/assets/027b481a-3402-4349-97d1-d020355fec27)
+
 
 * **Crear un archivo secreto en `/expedientes` con contenido delicado:**
 
@@ -208,12 +212,16 @@
   echo "Contenido secreto" | sudo tee /expedientes/secreto > /dev/null
   sudo chmod 600 /expedientes/secreto
   ```
+     ![image](https://github.com/user-attachments/assets/f5641905-fca0-4796-8b0d-05f090739684)
+
 
 * **Eliminar a `adele` del grupo `agentes`:**
 
   ```bash
   sudo gpasswd -d adele agentes
   ```
+     ![image](https://github.com/user-attachments/assets/01edfd11-bae9-47f7-b84a-9f5515925849)
+
 
 ---
 
@@ -227,6 +235,8 @@
   sudo chmod 770 /expedientes
   sudo chmod 600 /expedientes/secreto
   ```
+     ![image](https://github.com/user-attachments/assets/f0223244-b9e8-445b-b80f-c18de6b9d28a)
+
 
 * **Asignar permisos para que solo el grupo pueda acceder:**
 
@@ -234,6 +244,8 @@
   sudo chmod 770 /expedientes
   sudo chmod 660 /expedientes/secreto
   ```
+     ![image](https://github.com/user-attachments/assets/483d04f6-258d-4aad-8b08-5b32a3a9227d)
+
 
 ---
 
