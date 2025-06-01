@@ -1,11 +1,13 @@
 
+
 ---
 
+````markdown
 ## **Laboratorio #4 - Permisos - Usuarios y Grupos**
 
-**Nombre y Apellido:** Tiziano Pirez
-**Curso:** 5"4
-**Fecha:** 12 de mayo, 2025
+**Nombre y Apellido:** Tiziano Pirez  
+**Curso:** 5"4  
+**Fecha:** 12 de mayo, 2025  
 
 ## Descripción
 
@@ -17,24 +19,17 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
 **Actividades:**
 
-* **Crear el usuario `kevin`:**
+- **Crear el usuario `kevin`:**
 
   ```bash
   sudo useradd kevin
-  ```
-
-    ![image](https://github.com/user-attachments/assets/e63212c1-c7da-4bef-af91-0db79ebd4d26)
-
-  
+````
 
 * **Verificar su existencia en el archivo `/etc/passwd`:**
 
   ```bash
-  cat /etc/passwd | grep kevin
+  grep kevin /etc/passwd
   ```
-  
-    ![image](https://github.com/user-attachments/assets/ce268233-0608-42f4-9768-4c22c37d94eb)
-
 
 * **Iniciar sesión como `kevin` y mostrar su información con `id`:**
 
@@ -43,18 +38,11 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   id
   ```
 
-  ![image](https://github.com/user-attachments/assets/8c212004-0bdb-4870-b70a-fc62ea36f363)
-
-
-
 * **Crear el usuario `mitnick` con un UID específico y su propio grupo:**
 
   ```bash
-  sudo useradd -u 1050 -G mitnick mitnick
+  sudo useradd -u 1050 -m -U mitnick
   ```
-
-  ![image](https://github.com/user-attachments/assets/2c86f3f1-d2ad-4d45-a709-381b67cdf43a)
-
 
 * **Asignar contraseña a `mitnick`:**
 
@@ -62,17 +50,11 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo passwd mitnick
   ```
 
-  ![image](https://github.com/user-attachments/assets/0c5e3af7-5ee9-4817-940e-98e0ffe0183e)
-
-
-
 * **Crear el grupo `agentes`:**
 
   ```bash
   sudo groupadd agentes
   ```
-
-    ![image](https://github.com/user-attachments/assets/b7988a02-6595-439f-8574-3fc856cf286e)
 
 * **Añadir a `kevin` y `mitnick` al grupo `agentes`:**
 
@@ -81,15 +63,11 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo usermod -aG agentes mitnick
   ```
 
-   ![image](https://github.com/user-attachments/assets/1fe056b9-1f3c-40e0-a1f8-b6eba0a6aefb)
-
 * **Hacer que `mitnick` sea el administrador del grupo `agentes`:**
 
   ```bash
   sudo gpasswd -A mitnick agentes
   ```
-
-  ![image](https://github.com/user-attachments/assets/3813b25c-ff38-491c-b599-3dad4f0ea6ca)
 
 ---
 
@@ -104,9 +82,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   groups mitnick
   ```
 
-    ![image](https://github.com/user-attachments/assets/f3853218-2130-4d6a-852f-4789b0b4894d)
-
-* **Crear un archivo `primero` como `kevin`, cambiarle el grupo a `agentes`:**
+* **Crear un archivo `primero` como `kevin` y cambiarle el grupo a `agentes`:**
 
   ```bash
   su - kevin
@@ -114,15 +90,11 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   chgrp agentes primero
   ```
 
-    ![image](https://github.com/user-attachments/assets/7aab6526-c5df-4016-a139-653cbf9447d3)
-
 * **Cambiar el grupo principal de `kevin` a `agentes`:**
 
   ```bash
   sudo usermod -g agentes kevin
   ```
-
-  ![image](https://github.com/user-attachments/assets/99d7049c-7ba6-4aa1-8c0c-a11da28a8742)
 
 * **Crear un archivo `segundo`, cambiarle el grupo a `kevin`:**
 
@@ -131,15 +103,11 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   chgrp kevin segundo
   ```
 
-  ![image](https://github.com/user-attachments/assets/4fd0a1e2-9a81-4e5e-a12d-91617e4e35b2)
-
 * **Restaurar el grupo principal de `kevin` a `kevin`:**
 
   ```bash
   sudo usermod -g kevin kevin
   ```
-  
-  ![image](https://github.com/user-attachments/assets/a9922bbd-af32-45f7-91b5-b86207b06042)
 
 ---
 
@@ -147,7 +115,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
 **Actividades:**
 
-* **Como `kevin`, crear un archivo con contenido sensible y modificar sus permisos para que sólo él pueda escribirlo:**
+* **Como `kevin`, crear un archivo con contenido sensible y modificar sus permisos:**
 
   ```bash
   su - kevin
@@ -155,24 +123,18 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   chmod 600 archivo_sensible
   ```
 
-    ![image](https://github.com/user-attachments/assets/4cd43d9f-dd15-4f3f-905c-7fc52f80a106)
-
-
 * **Como `mitnick`, intentar acceder al archivo:**
 
   ```bash
   su - mitnick
-  cat archivo_sensible
+  cat /home/kevin/archivo_sensible
   ```
-
-![image](https://github.com/user-attachments/assets/2bf65ca5-b2ac-414e-b9df-792d0aef756b)
-
 
 * **Restringir aún más los permisos y volver a probar el acceso:**
 
   ```bash
-  chmod 400 archivo_sensible
-  cat archivo_sensible
+  chmod 400 /home/kevin/archivo_sensible
+  cat /home/kevin/archivo_sensible
   ```
 
 ---
@@ -181,7 +143,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
 **Actividades:**
 
-* **Crear un archivo `mision`, asignarlo al grupo `agentes` y dar permisos adecuados:**
+* **Crear el archivo `mision`, asignarlo al grupo `agentes` y dar permisos adecuados:**
 
   ```bash
   touch mision
@@ -193,7 +155,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
   ```bash
   su - mitnick
-  cat mision
+  cat /home/kevin/mision
   ```
 
 ---
@@ -205,11 +167,11 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 * **Crear el usuario `adele` y añadirlo al grupo `agentes`:**
 
   ```bash
-  sudo useradd adele
+  sudo useradd -m adele
   sudo usermod -aG agentes adele
   ```
 
-* **Crear el directorio `/expedientes` y asignar su propiedad a `mitnick` y su grupo a `agentes`:**
+* **Crear el directorio `/expedientes` y asignarlo a `mitnick` y grupo `agentes`:**
 
   ```bash
   sudo mkdir /expedientes
@@ -219,8 +181,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 * **Crear un archivo secreto en `/expedientes` con contenido delicado:**
 
   ```bash
-  sudo touch /expedientes/secreto
-  sudo echo "Contenido secreto" > /expedientes/secreto
+  echo "Contenido secreto" | sudo tee /expedientes/secreto > /dev/null
   sudo chmod 600 /expedientes/secreto
   ```
 
@@ -236,14 +197,14 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
 **Actividades:**
 
-* **Modificar los permisos de `/expedientes` y su contenido para probar accesos como otros usuarios:**
+* **Modificar los permisos de `/expedientes` y su contenido para probar accesos:**
 
   ```bash
   sudo chmod 770 /expedientes
   sudo chmod 600 /expedientes/secreto
   ```
 
-* **Asignar permisos para que sólo miembros del grupo `agentes` puedan acceder:**
+* **Asignar permisos para que solo el grupo pueda acceder:**
 
   ```bash
   sudo chmod 770 /expedientes
@@ -256,13 +217,13 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
 **Actividades:**
 
-* **Probar la eliminación de archivos por otros miembros del grupo:**
+* **Probar eliminación de archivos por otros miembros del grupo:**
 
   ```bash
   sudo rm /expedientes/secreto
   ```
 
-* **Activar el sticky bit en `/expedientes` y verificar su efecto al intentar borrar archivos:**
+* **Activar el sticky bit en `/expedientes`:**
 
   ```bash
   sudo chmod +t /expedientes
@@ -277,10 +238,10 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 * **Crear el usuario `ofelia`:**
 
   ```bash
-  sudo useradd ofelia
+  sudo useradd -m ofelia
   ```
 
-* **Iniciar sesión con `ofelia` y cambiar temporalmente al grupo `agentes` usando `newgrp`:**
+* **Cambiar temporalmente al grupo `agentes` con `newgrp`:**
 
   ```bash
   su - ofelia
@@ -293,7 +254,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
 **Actividades:**
 
-* **Compilar un programa llamado `manipular` desde un archivo fuente `manipular.cc`:**
+* **Compilar un programa llamado `manipular` desde `manipular.cc`:**
 
   ```bash
   g++ manipular.cc -o manipular
@@ -302,19 +263,14 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 * **Copiarlo a `/usr/bin` y asignarle propiedad:**
 
   ```bash
-  sudo cp manipular /usr/bin
+  sudo cp manipular /usr/bin/
   sudo chown root:root /usr/bin/manipular
   ```
 
-* **Usar el programa para escribir un archivo en el directorio personal:**
+* **Usar el programa para escribir un archivo:**
 
   ```bash
-  manipular > /home/kevin/archivo.txt
-  ```
-
-* **Proteger el archivo generado con permisos:**
-
-  ```bash
+  /usr/bin/manipular > /home/kevin/archivo.txt
   chmod 600 /home/kevin/archivo.txt
   ```
 
@@ -324,13 +280,13 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
 **Actividades:**
 
-* **Activar el bit `setuid` en el programa `manipular`:**
+* **Activar el bit `setuid` en `manipular`:**
 
   ```bash
   sudo chmod u+s /usr/bin/manipular
   ```
 
-* **Probar que otros usuarios pueden usarlo para leer archivos restringidos:**
+* **Probar que otros usuarios lo usen para leer archivos restringidos:**
 
   ```bash
   su - mitnick
@@ -341,10 +297,11 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
 
   ```bash
   sudo chmod u-s /usr/bin/manipular
+  sudo chgrp agentes /usr/bin/manipular
   sudo chmod g+s /usr/bin/manipular
   ```
 
-* **Verificar el acceso al archivo `/expedientes/ficherosecreto` usando el bit `setgid`:**
+* **Verificar el acceso a `/expedientes/ficherosecreto`:**
 
   ```bash
   su - mitnick
@@ -352,5 +309,4 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   ```
 
 ---
-
 
