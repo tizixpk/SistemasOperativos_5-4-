@@ -23,7 +23,8 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo useradd kevin
   ```
 
-     ![image](https://github.com/user-attachments/assets/ccaf9e70-3f4a-40de-adf8-58d318aac683)
+    ![image](https://github.com/user-attachments/assets/e63212c1-c7da-4bef-af91-0db79ebd4d26)
+
   
 
 * **Verificar su existencia en el archivo `/etc/passwd`:**
@@ -32,7 +33,7 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   cat /etc/passwd | grep kevin
   ```
   
-     ![image](https://github.com/user-attachments/assets/b28011de-3573-43ce-b967-fcdc749fe288)
+    ![image](https://github.com/user-attachments/assets/ce268233-0608-42f4-9768-4c22c37d94eb)
 
 
 * **Iniciar sesión como `kevin` y mostrar su información con `id`:**
@@ -42,7 +43,8 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   id
   ```
 
-   ![image](https://github.com/user-attachments/assets/ecb5db66-592c-40e7-94e6-504113a1117c)
+  ![image](https://github.com/user-attachments/assets/8c212004-0bdb-4870-b70a-fc62ea36f363)
+
 
 
 * **Crear el usuario `mitnick` con un UID específico y su propio grupo:**
@@ -51,7 +53,8 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo useradd -u 1050 -G mitnick mitnick
   ```
 
-  ![image](https://github.com/user-attachments/assets/b96b56f5-af4e-4e29-a03f-0b96a42904a4)
+  ![image](https://github.com/user-attachments/assets/2c86f3f1-d2ad-4d45-a709-381b67cdf43a)
+
 
 * **Asignar contraseña a `mitnick`:**
 
@@ -59,7 +62,8 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   sudo passwd mitnick
   ```
 
-  ![image](https://github.com/user-attachments/assets/499596e8-ad30-4634-9719-be701ab9f567)
+  ![image](https://github.com/user-attachments/assets/0c5e3af7-5ee9-4817-940e-98e0ffe0183e)
+
 
 
 * **Crear el grupo `agentes`:**
@@ -160,6 +164,9 @@ Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con ac
   su - mitnick
   cat archivo_sensible
   ```
+
+![image](https://github.com/user-attachments/assets/2bf65ca5-b2ac-414e-b9df-792d0aef756b)
+
 
 * **Restringir aún más los permisos y volver a probar el acceso:**
 
