@@ -20,7 +20,8 @@ Verificación:
 ls /home
 
 ```
-📸 ![image](https://github.com/user-attachments/assets/458b6ef8-dec8-4223-b0c9-ef1faab33f56)
+📸 ![image](https://github.com/user-attachments/assets/5c0025ad-9176-4a8e-9d9d-73fbe5ebe2e1)
+
 ---
 
 ## 2. Crear usuario kornuser con otro shell por defecto
