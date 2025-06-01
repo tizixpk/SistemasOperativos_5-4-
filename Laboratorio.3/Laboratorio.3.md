@@ -54,8 +54,8 @@ echo "einstime:einstime" | sudo chpasswd
 
 No tiene entorno completo ni archivos personales; es útil para usuarios con permisos limitados, por ejemplo, scripts automatizados o tareas de sistema.
 
-📸 
-![image](https://github.com/user-attachments/assets/578e65cc-0958-4bc5-8872-148657409fdd)
+📸 ![image](https://github.com/user-attachments/assets/7430c2a1-1ad1-460b-9f54-45d49d500428)
+
 
 
 ---
