@@ -360,5 +360,9 @@
   manipular /expedientes/ficherosecreto
   ```
 
+
+PUNTO 10: VERIFICACION: 
+    ![image](https://github.com/user-attachments/assets/229df682-7657-44d3-9362-aaf19ac682f9)
+
 ---
 
