@@ -37,7 +37,8 @@ cat /etc/shells
 su - kornuser
 ```
 
-📸 ![image](https://github.com/user-attachments/assets/13a8e107-e416-430e-a8ee-6e11b1a87e49)
+📸 ![image](https://github.com/user-attachments/assets/1fa5bd08-794e-4378-b663-da122ef05a8b)
+
 
 
 ---
