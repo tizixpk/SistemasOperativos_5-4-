@@ -13,7 +13,6 @@
 
   ```bash
   sudo useradd kevin
-````
 
 * **Verificar su existencia en el archivo `/etc/passwd`:**
 
