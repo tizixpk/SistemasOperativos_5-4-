@@ -258,12 +258,15 @@
   ```bash
   sudo rm /expedientes/secreto
   ```
+     ![image](https://github.com/user-attachments/assets/4792cb42-0fed-495a-b0fe-d1d3fd0886f2)
 
 * **Activar el sticky bit en `/expedientes`:**
 
   ```bash
   sudo chmod +t /expedientes
   ```
+    ![image](https://github.com/user-attachments/assets/b0dc7d58-6f94-467a-a2cd-c700a78d87c5)
+
 
 ---
 
@@ -275,14 +278,18 @@
 
   ```bash
   sudo useradd -m ofelia
-  ```
+  ```  
+     ![image](https://github.com/user-attachments/assets/9b879d03-f917-4476-8981-e2b53152fc54)
+
 
 * **Cambiar temporalmente al grupo `agentes` con `newgrp`:**
 
   ```bash
   su - ofelia
   newgrp agentes
-  ```
+  ``` 
+    ![image](https://github.com/user-attachments/assets/7767dfdf-0782-4b39-9da4-518beb7d36df)
+
 
 ---
 
@@ -293,15 +300,22 @@
 * **Compilar un programa llamado `manipular` desde `manipular.cc`:**
 
   ```bash
+  sudo apt install g++
   g++ manipular.cc -o manipular
   ```
+     ![image](https://github.com/user-attachments/assets/84367494-6360-4230-959a-a6d43b6981d0)
 
+
+   
 * **Copiarlo a `/usr/bin` y asignarle propiedad:**
 
   ```bash
   sudo cp manipular /usr/bin/
   sudo chown root:root /usr/bin/manipular
   ```
+    ![image](https://github.com/user-attachments/assets/c7d3fcc6-8e13-4199-a8d4-8bf842a4502f)
+
+
 
 * **Usar el programa para escribir un archivo:**
 
@@ -309,6 +323,8 @@
   /usr/bin/manipular > /home/kevin/archivo.txt
   chmod 600 /home/kevin/archivo.txt
   ```
+    ![image](https://github.com/user-attachments/assets/e781dc7b-25a0-4180-b0d0-3b57e1945251)
+
 
 ---
 
