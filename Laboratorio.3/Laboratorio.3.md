@@ -82,7 +82,8 @@ Verificación:
 sudo passwd -S venus
 ```
 
-📸 ![image](https://github.com/user-attachments/assets/f9265e27-6199-44cb-ac31-a838bed0175a)
+📸 ![image](https://github.com/user-attachments/assets/9057dd5a-4be1-4d1e-827e-0995373b166a)
+
 
 
 ---
