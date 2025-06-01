@@ -12,13 +12,18 @@
 - **Crear el usuario `kevin`:**
 
   ```bash
-  sudo useradd kevin
+  sudo useradd  -m -s  /bin/bash kevin
+   ```
+  ![image](https://github.com/user-attachments/assets/94b5cc8b-bc4f-46b0-bda3-11a8e7e90641)
+
 
 * **Verificar su existencia en el archivo `/etc/passwd`:**
 
   ```bash
   grep kevin /etc/passwd
   ```
+![image](https://github.com/user-attachments/assets/0f2d827d-8b7f-4a6c-a631-c60485a59965)
+
 
 * **Iniciar sesión como `kevin` y mostrar su información con `id`:**
 
@@ -26,24 +31,32 @@
   su - kevin
   id
   ```
+![image](https://github.com/user-attachments/assets/e2738f6e-1e97-4ad0-8e2a-c440dfebf8a5)
+
 
 * **Crear el usuario `mitnick` con un UID específico y su propio grupo:**
 
   ```bash
   sudo useradd -u 1050 -m -U mitnick
   ```
+![image](https://github.com/user-attachments/assets/37d4d1f1-14ca-41a4-84a7-055e9347543e)
+
 
 * **Asignar contraseña a `mitnick`:**
 
   ```bash
   sudo passwd mitnick
   ```
+![image](https://github.com/user-attachments/assets/38d8fe14-2448-4041-88c9-9d822a1dfe80)
+
 
 * **Crear el grupo `agentes`:**
 
   ```bash
   sudo groupadd agentes
   ```
+![image](https://github.com/user-attachments/assets/0ccd8dd4-f71d-402d-93cd-f7c41d6c3663)
+
 
 * **Añadir a `kevin` y `mitnick` al grupo `agentes`:**
 
@@ -51,12 +64,16 @@
   sudo usermod -aG agentes kevin
   sudo usermod -aG agentes mitnick
   ```
+![image](https://github.com/user-attachments/assets/f50537ea-6b99-4331-8243-5d8cc64065cd)
+
 
 * **Hacer que `mitnick` sea el administrador del grupo `agentes`:**
 
   ```bash
   sudo gpasswd -A mitnick agentes
   ```
+![image](https://github.com/user-attachments/assets/97b8177a-b2a6-42d2-857f-43bc86610ae0)
+
 
 ---
 
@@ -70,6 +87,8 @@
   groups kevin
   groups mitnick
   ```
+![image](https://github.com/user-attachments/assets/60cf12fd-a20e-4c05-b96f-c86b751d215f)
+
 
 * **Crear un archivo `primero` como `kevin` y cambiarle el grupo a `agentes`:**
 
@@ -78,12 +97,16 @@
   touch primero
   chgrp agentes primero
   ```
+![image](https://github.com/user-attachments/assets/5100d25f-2b39-4b0a-b8fd-5392620bd594)
+
 
 * **Cambiar el grupo principal de `kevin` a `agentes`:**
 
   ```bash
   sudo usermod -g agentes kevin
   ```
+![image](https://github.com/user-attachments/assets/aa4f6047-bffc-492a-b2a8-4e41256f1420)
+
 
 * **Crear un archivo `segundo`, cambiarle el grupo a `kevin`:**
 
@@ -91,12 +114,16 @@
   touch segundo
   chgrp kevin segundo
   ```
+![image](https://github.com/user-attachments/assets/a0e396ba-3dc9-48c0-8a1b-7f84956f5111)
+
 
 * **Restaurar el grupo principal de `kevin` a `kevin`:**
 
   ```bash
   sudo usermod -g kevin kevin
   ```
+![image](https://github.com/user-attachments/assets/9f79bf37-125a-4e0f-88af-4b665d6aa74d)
+
 
 ---
 
