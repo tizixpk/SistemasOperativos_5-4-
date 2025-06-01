@@ -116,8 +116,7 @@ su - serena
 passwd
 ```
 
-Descripción: Aparece error porque no tiene contraseña activa.
-📸 ![image](https://github.com/user-attachments/assets/9df2fb79-4f1c-44fc-96e9-cb13765d2f43)
+📸 ![image](https://github.com/user-attachments/assets/4ba8c85a-b6e0-4e23-8328-de82de461842)
 
 
 ---
