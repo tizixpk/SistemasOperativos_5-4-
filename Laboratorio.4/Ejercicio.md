@@ -1,17 +1,9 @@
-
-
 ---
-
-````markdown
 ## **Laboratorio #4 - Permisos - Usuarios y Grupos**
 
 **Nombre y Apellido:** Tiziano Pirez  
 **Curso:** 5"4  
 **Fecha:** 12 de mayo, 2025  
-
-## Descripción
-
-Práctica de gestión de usuarios, grupos y permisos en un sistema Linux, con actividades que incluyen la creación de usuarios y grupos, el control de acceso a archivos, la protección contra borrado, y el uso de permisos especiales como `setuid` y `setgid`.
 
 ---
 
