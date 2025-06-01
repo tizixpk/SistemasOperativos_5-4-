@@ -96,7 +96,8 @@ sudo passwd -d serena
 sudo cat /etc/shadow | grep serena
 ```
 
-📸 ![image](https://github.com/user-attachments/assets/c3244300-49da-4acb-ab0f-529853f9c4a1)
+📸 ![image](https://github.com/user-attachments/assets/00701d41-25fd-4bd1-8be6-41c40c5caebf)
+
 
 
 ---
