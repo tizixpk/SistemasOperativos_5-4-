@@ -1,13 +1,11 @@
----
 ## **Laboratorio #4 - Permisos - Usuarios y Grupos**
 
 **Nombre y Apellido:** Tiziano Pirez  
 **Curso:** 5"4  
 **Fecha:** 12 de mayo, 2025  
 
----
 
-### **1. Creación de Usuarios y Grupos**
+## **1. Creación de Usuarios y Grupos**
 
 **Actividades:**
 
