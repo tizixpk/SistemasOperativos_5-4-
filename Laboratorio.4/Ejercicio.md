@@ -138,6 +138,8 @@
   echo "Contenido sensible" > archivo_sensible
   chmod 600 archivo_sensible
   ```
+     ![image](https://github.com/user-attachments/assets/9c6551f0-248b-46fd-984d-0435d2c08ea1)
+
 
 * **Como `mitnick`, intentar acceder al archivo:**
 
@@ -145,6 +147,8 @@
   su - mitnick
   cat /home/kevin/archivo_sensible
   ```
+     ![image](https://github.com/user-attachments/assets/75c47006-cd60-4656-a749-d302b2fd0912)
+
 
 * **Restringir aún más los permisos y volver a probar el acceso:**
 
@@ -152,6 +156,7 @@
   chmod 400 /home/kevin/archivo_sensible
   cat /home/kevin/archivo_sensible
   ```
+     ![image](https://github.com/user-attachments/assets/61506edd-4f32-4809-8b42-b5609e50daa5)
 
 ---
 
@@ -166,6 +171,8 @@
   chgrp agentes mision
   chmod 770 mision
   ```
+     ![image](https://github.com/user-attachments/assets/86053872-9936-49c8-9748-c80ae47e7948)
+
 
 * **Verificar si `mitnick` puede leer el archivo `mision`:**
 
@@ -173,6 +180,7 @@
   su - mitnick
   cat /home/kevin/mision
   ```
+     ![image](https://github.com/user-attachments/assets/283ce6ee-e91a-4aa2-9868-d3a6aa9aa0aa)
 
 ---
 
