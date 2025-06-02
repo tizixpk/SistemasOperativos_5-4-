@@ -11,33 +11,61 @@
 ![image](https://github.com/user-attachments/assets/da7f104b-7afe-4dc5-8f63-e8dab2929c15)
 ![image](https://github.com/user-attachments/assets/8a889cc1-b662-4cde-9a71-a76e0c94feb0)
 
+---
 
 ## **2. Creación de Usuarios y Grupos**
+
 ![image](https://github.com/user-attachments/assets/ca0e199c-3f48-46c7-87bc-8edb27fb4a5c)
 
+---
+
 ## **3. Creación de Usuarios y Grupos**
+
 ![image](https://github.com/user-attachments/assets/78be71e7-c566-4268-bade-c4f510dd19ab)
 
+---
+
 ## **4. Creación de Usuarios y Grupos**
+
+
 ![image](https://github.com/user-attachments/assets/1916cf9c-da04-44c0-8438-94e70f37a37c)
 
+---
+
 ## **5. Creación de Usuarios y Grupos**
+
 ![image](https://github.com/user-attachments/assets/ed350716-4730-4eda-86de-78920e557963)
 
+---
+
 ## **6. Creación de Usuarios y Grupos**
+
 ![image](https://github.com/user-attachments/assets/a04e3c92-1222-49e1-a078-7f22e77de170)
 
+---
+
 ## **7. Creación de Usuarios y Grupos**
+
 ![image](https://github.com/user-attachments/assets/5c019ae3-2161-4305-a549-78b6e225292d)
+
 ![image](https://github.com/user-attachments/assets/8787d8fb-4b7b-4335-8f92-b9fba35b57db)
 
+---
+
 ## **8. Creación de Usuarios y Grupos** 
+
 ![image](https://github.com/user-attachments/assets/fe4c79c2-5a2c-4eec-a94f-65ab0de580fc)
 
+---
+
 ## **9. Creación de Usuarios y Grupos**
+
 ![image](https://github.com/user-attachments/assets/bea4c546-1ac0-4c70-85f2-5dbf9fea2181)
 
+---
+
 ## **10. Creación de Usuarios y Grupos**
+
 ![image](https://github.com/user-attachments/assets/0f0a6519-84c1-4982-8601-21b8767f3ee5)
 
 ----
