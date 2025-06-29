@@ -1,4 +1,4 @@
-## **Laboratorio #6 - Permisos - PowerShell**
+## **Laboratorio #5 - Permisos - PowerShell**
 
 **Nombre y Apellido:** Tiziano Pirez  
 **Curso:** 5"4  
