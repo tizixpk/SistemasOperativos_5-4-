@@ -138,7 +138,7 @@ Windows (PC Física):
 
 Linux (Ubuntu Server):
 
-![Uploading image.png…]()
+
 
 <img width="584" height="28" alt="image" src="https://github.com/user-attachments/assets/d99e379d-80e9-4991-8e41-f621b6f33f5d" />
 
