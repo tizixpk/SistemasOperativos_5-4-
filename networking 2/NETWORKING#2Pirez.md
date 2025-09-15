@@ -33,10 +33,13 @@ VERIFICACION CON “route print”
 
 ping al GW - Mikrotik
 
-![Uploading image.png…]()
+<img width="503" height="217" alt="image" src="https://github.com/user-attachments/assets/ab01bdeb-fa07-4753-b104-bcfa542f0576" />
+
 
 
 Ingresar al router Mikrotik y establecer IP estática en ether1
+
+<img width="617" height="235" alt="image" src="https://github.com/user-attachments/assets/3ac19f64-7a9a-45ce-81ee-860e9c80c52e" />
 
 
 Desde la red LAN virtual (cliente Ubuntu server), probar conectividad
@@ -44,16 +47,19 @@ Desde la red LAN virtual (cliente Ubuntu server), probar conectividad
 
 ping al GW
 
-<img width="639" height="246" alt="image" src="https://github.com/user-attachments/assets/629a26d2-b9f8-4730-92c2-28508292b2df" />
+
 
 
 Desde Servidor Ubuntu 
-                             ping al GW
-![image_9.png](./NETWORKING#2Pirez_images/image_9.png)
+   
+ping al GW
 
-Desde Router Mikrotik (no funciona) no funciona con Google, pero si con 8.8.8.8
-                       ping a Google.com
-![image_10.png](./NETWORKING#2Pirez_images/image_10.png)
+
+
+
+Desde Router Mikrotik (no funciona) no funciona con Google, pero si con 8.8.8.8  ping a Google.com
+
+
 
 PARTE #2
 
