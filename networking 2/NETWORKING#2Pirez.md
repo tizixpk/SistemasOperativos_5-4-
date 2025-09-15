@@ -1,6 +1,5 @@
+### Pirez Tiziano 5to 4ta
 # NETWORKING - Conversión a Markdown
-
-Este archivo fue generado a partir de `NETWORKING#2Pirez.docx` y las imágenes se colocaron en la carpeta `NETWORKING#2Pirez_images`.
 
 NETWORKING
 
@@ -9,7 +8,8 @@ PARTE#01
 Establecer y relevar las direcciones IPv4 y documentarlas en el plano
 
 Tarea realizada en la parte 1
-![image_1.png](./NETWORKING#2Pirez_images/image_1.png)
+<img width="729" height="333" alt="image" src="https://github.com/user-attachments/assets/92a9004a-ccd8-45a8-98d7-39cc81ff8765" />
+
 
 Desde PC Windows – Física
 
@@ -17,31 +17,35 @@ Desde PC Windows – Física
 
 Puerta de enlace predeterminada:
 
-![image_2.png](./NETWORKING#2Pirez_images/image_2.png)
+<img width="612" height="293" alt="image" src="https://github.com/user-attachments/assets/37a02e39-e595-4a01-aa87-ff15fae0535e" />
+
 
 Añadir otra puerta de enlace/ruta:
 
-![image_3.png](./NETWORKING#2Pirez_images/image_3.png)
+<img width="363" height="117" alt="image" src="https://github.com/user-attachments/assets/aae95286-2834-4eff-8764-f733da3b368b" />
+<img width="641" height="44" alt="image" src="https://github.com/user-attachments/assets/f399da41-5533-4449-ab48-c6af007bdffe" />
 
-![image_4.png](./NETWORKING#2Pirez_images/image_4.png)
 
 VERIFICACION CON “route print”
 
-![image_5.png](./NETWORKING#2Pirez_images/image_5.png)
+<img width="606" height="58" alt="image" src="https://github.com/user-attachments/assets/15b70254-06c4-4d11-abfc-eea095d34bd1" />
+
 
 ping al GW - Mikrotik
 
-![image_6.png](./NETWORKING#2Pirez_images/image_6.png)
+![Uploading image.png…]()
+
 
 Ingresar al router Mikrotik y establecer IP estática en ether1
-![image_7.png](./NETWORKING#2Pirez_images/image_7.png)
+
 
 Desde la red LAN virtual (cliente Ubuntu server), probar conectividad
  Desde PC Windows
 
 ping al GW
 
-![image_8.png](./NETWORKING#2Pirez_images/image_8.png)
+<img width="639" height="246" alt="image" src="https://github.com/user-attachments/assets/629a26d2-b9f8-4730-92c2-28508292b2df" />
+
 
 Desde Servidor Ubuntu 
                              ping al GW
