@@ -75,6 +75,7 @@ out-interface=ether1 define la interfaz que sale a Internet.
 
 action=masquerade oculta las IP privadas detrás de la IP pública del router.
 
+<img width="637" height="33" alt="image" src="https://github.com/user-attachments/assets/ad8332e5-684c-44bb-a9ef-e1f0dd167481" />
 
 
 Resuelto también en parte grafica
@@ -82,13 +83,18 @@ Resuelto también en parte grafica
 Desde PC Windows (Ubuntu server-cliente)
 
 ping a Google.com no funciona con Google, pero si con 8.8.8.8
-![image_12.png](./NETWORKING#2Pirez_images/image_12.png)
+
+
+
+<img width="532" height="207" alt="image" src="https://github.com/user-attachments/assets/426d081d-68a8-40ed-9352-54a7084a9d1b" />
+
 
 Desde Servidor Ubuntu 
  ping a Google.com
  no funciona con Google, pero si con 8.8.8.8
 
-![image_13.png](./NETWORKING#2Pirez_images/image_13.png)
+<img width="560" height="159" alt="image" src="https://github.com/user-attachments/assets/145648c8-e6d6-4145-b609-ae5b17468df5" />
+
 
 Establecer una ruta estática en la PC física para tener acceso a la red LAN virtual
 
@@ -110,7 +116,7 @@ sudo ip route add 192.168.10.0/24 via 192.168.1.254
 
 Windows (PC Física):
 
-![image_4.png](./NETWORKING#2Pirez_images/image_4.png)
+![Uploading image.png…]()
 
 ![image_14.png](./NETWORKING#2Pirez_images/image_14.png)
 
