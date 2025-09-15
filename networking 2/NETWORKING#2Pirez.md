@@ -8,6 +8,7 @@ PARTE#01
 Establecer y relevar las direcciones IPv4 y documentarlas en el plano
 
 Tarea realizada en la parte 1
+
 <img width="729" height="333" alt="image" src="https://github.com/user-attachments/assets/92a9004a-ccd8-45a8-98d7-39cc81ff8765" />
 
 
@@ -23,6 +24,7 @@ Puerta de enlace predeterminada:
 Añadir otra puerta de enlace/ruta:
 
 <img width="363" height="117" alt="image" src="https://github.com/user-attachments/assets/aae95286-2834-4eff-8764-f733da3b368b" />
+
 <img width="641" height="44" alt="image" src="https://github.com/user-attachments/assets/f399da41-5533-4449-ab48-c6af007bdffe" />
 
 
