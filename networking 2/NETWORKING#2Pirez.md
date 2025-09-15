@@ -48,17 +48,19 @@ Desde la red LAN virtual (cliente Ubuntu server), probar conectividad
 ping al GW
 
 
+<img width="488" height="143" alt="image" src="https://github.com/user-attachments/assets/8ce55c5b-4b78-4591-ab8d-c1847b3b478c" />
 
 
 Desde Servidor Ubuntu 
    
 ping al GW
 
-
+<img width="527" height="134" alt="image" src="https://github.com/user-attachments/assets/d4652561-df51-4d6e-9459-19e05102fd68" />
 
 
 Desde Router Mikrotik (no funciona) no funciona con Google, pero si con 8.8.8.8  ping a Google.com
 
+<img width="602" height="191" alt="image" src="https://github.com/user-attachments/assets/2ba06a64-cda7-41ca-b4c7-f107b4626c8e" />
 
 
 PARTE #2
@@ -73,7 +75,7 @@ out-interface=ether1 define la interfaz que sale a Internet.
 
 action=masquerade oculta las IP privadas detrás de la IP pública del router.
 
-![image_11.png](./NETWORKING#2Pirez_images/image_11.png)
+
 
 Resuelto también en parte grafica
 
