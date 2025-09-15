@@ -87,7 +87,6 @@ Desde PC Windows (Ubuntu server-cliente)
 ping a Google.com no funciona con Google, pero si con 8.8.8.8
 
 
-
 <img width="532" height="207" alt="image" src="https://github.com/user-attachments/assets/426d081d-68a8-40ed-9352-54a7084a9d1b" />
 
 
@@ -103,13 +102,9 @@ Establecer una ruta estática en la PC física para tener acceso a la red LAN vi
 Verificar conectividad usando el comando ping desde la PC física a cualquier dispositivo final de la LAN virtual
 
 route add 192.168.3.0 mask 255.255.255.0 192.168.1.254 -p
-
 192.168.3.0 red LAN virtual
-
 255.255.255.0 máscara de la red LAN
-
 192.168.1.254 dirección del router (gateway) IMPORTANTE Esta direccion es la de tu red. No NECESARIAMENTE ES LA MISMA
-
 -p → hace que la ruta sea persistente después de reiniciar (OPCIONAL)
 
 En Linux
@@ -118,11 +113,15 @@ sudo ip route add 192.168.10.0/24 via 192.168.1.254
 
 Windows (PC Física):
 
-![Uploading image.png…]()
+<img width="648" height="44" alt="image" src="https://github.com/user-attachments/assets/d620d831-c4c4-44ca-beaa-5189c4027b0c" />
 
-![image_14.png](./NETWORKING#2Pirez_images/image_14.png)
+
+<img width="639" height="79" alt="image" src="https://github.com/user-attachments/assets/9b5d8461-bab2-4bbb-b47f-9f894134bb62" />
+
 
 Linux (Ubuntu Server):
 
 ![image_15.png](./NETWORKING#2Pirez_images/image_15.png)
+
+<img width="584" height="28" alt="image" src="https://github.com/user-attachments/assets/d99e379d-80e9-4991-8e41-f621b6f33f5d" />
 
