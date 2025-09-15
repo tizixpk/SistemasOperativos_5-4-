@@ -1,4 +1,4 @@
-### Pirez Tiziano  y Elias Rod 5to 4ta
+### Pirez Tiziano 5to 4ta
 # NETWORKING - Conversión a Markdown
 
 NETWORKING
