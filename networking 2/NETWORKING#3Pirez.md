@@ -36,10 +36,7 @@ Aquí van los diagramas / imágenes del esquema de red incluidos en el documento
 
 En este laboratorio vamos a abrir el puerto **9000/tcp** en el MikroTik; las peticiones que lleguen desde la WAN (internet) al puerto 9000 serán redirigidas al equipo **10.10.10.3** al puerto **80/tcp** (servidor web Apache).
 
-A continuación se muestran las IPs configuradas en el MikroTik en sus dos interfaces (nota: en un entorno real no deben coincidir con tu direccionamiento).
-*(Imagen del diagrama de IPs / interfaces)*
-
-
+A continuación se muestran las IPs configuradas en el MikroTik en sus dos interfaces 
 
 ### Crear la regla de NAT
 
@@ -65,12 +62,6 @@ curl http://<IP_pública>:9000
 ```
 
 2. Si la redirección funciona correctamente verás la respuesta del servidor Apache (puerto 80 del host 10.10.10.3).
-3. Si no funciona:
-
-   * Verificar que la IP pública y la interfaz `WAN` estén correctamente configuradas.
-   * Comprobar que el firewall no esté bloqueando la conexión.
-   * Asegurarse que el servicio en 10.10.10.3 esté escuchando en el puerto 80.
-   * Revisar logs y realizar `tcpdump`/packet capture si hace falta.
 
 <img width="592" height="304" alt="image" src="https://github.com/user-attachments/assets/9812ee61-fac9-4fe8-b69c-9805a3bc637a" />
 
