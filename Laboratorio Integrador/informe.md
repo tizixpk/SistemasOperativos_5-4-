@@ -156,14 +156,9 @@ touch /tmp/lab_marker.txt
 
 ---
 
-✅ **Estado final del sistema:**
+ **Estado final del sistema:**
 Se ejecutó `sudo bash lab_cleanup.sh` para revertir los cambios.
 Verificado: usuarios eliminados, cron borrado, `/etc/hosts` restaurado, archivos limpiados.
 Logs confirmados en `/var/log/lab_changes.log`.
 
 ---
-
-
-
-¿Querés que te lo deje ya en formato `.md` listo para subir (con emojis, títulos y todo bien formateado)?
-Puedo generarte el archivo `informe-alumno.md` final y pasarte el enlace directo de descarga para que lo subas a GitHub.
