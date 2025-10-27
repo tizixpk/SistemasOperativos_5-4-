@@ -1,13 +1,9 @@
----
-
 # 🧪 Informe del Laboratorio: Descubriendo Cambios en el Sistema
 
 **Alumno:** Tiziano Pirez
 **Curso:** 5º 4ª
 **Fecha:** 27/10/2025
 **Sistema Operativo:** Ubuntu Linux (entorno de laboratorio / máquina virtual)
-
----
 
 ## 1️⃣ Usuarios
 
