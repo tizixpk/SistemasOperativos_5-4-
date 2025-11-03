@@ -156,7 +156,7 @@ touch /tmp/lab_marker.txt
 
 ---
 
- **Estado final del sistema:**
+ **Estado final:**
 Se ejecutó `sudo bash lab_cleanup.sh` para revertir los cambios.
 Verificado: usuarios eliminados, cron borrado, `/etc/hosts` restaurado, archivos limpiados.
 Logs confirmados en `/var/log/lab_changes.log`.
