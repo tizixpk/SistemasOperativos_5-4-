@@ -137,7 +137,7 @@ touch /tmp/lab_marker.txt
 
 ## 7️⃣ Conclusiones y recomendaciones
 
-**Impacto en un sistema real:**
+**Impacto en un sistema posta:**
 
 * Creación de usuarios innecesarios puede abrir puertas a accesos indebidos.
 * Archivos con permisos 777 permiten escritura a cualquiera.
@@ -145,7 +145,7 @@ touch /tmp/lab_marker.txt
 * Cambios en `/etc/hosts` pueden alterar o bloquear sitios.
 * Atributos `immutable` dificultan mantenimiento o eliminación de archivos.
 
-**Medidas preventivas y de monitoreo:**
+**Medidas preventivas :**
 
 * Auditar periódicamente `/etc/passwd`, `/etc/group` y `/etc/cron.*`.
 * Usar `lsattr` para detectar atributos inusuales en archivos del sistema.
