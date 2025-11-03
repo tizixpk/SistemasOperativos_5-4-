@@ -1,11 +1,11 @@
-# 🧪 Informe del Laboratorio: Descubriendo Cambios en el Sistema
+#  Informe del Laboratorio Integrador
 
 **Alumno:** Tiziano Pirez
 **Curso:** 5º 4ª
 **Fecha:** 27/10/2025
-**Sistema Operativo:** Ubuntu Linux (entorno de laboratorio / máquina virtual)
+**Sistema Operativo:** Ubuntu Linux en maquina virtual 
 
-## 1️⃣ Usuarios
+## Usuarios
 
 **Usuarios nuevos creados:**
 
@@ -15,7 +15,7 @@
 | `sinhome`    | *sin home*         | `/usr/sbin/nologin` | Bloqueado |
 | `backup`     | `/home/backup`     | `/bin/bash`         | Activo    |
 
-🔍 **Análisis:**
+ **Análisis:**
 
 * El usuario `alumno_lab` fue creado para pruebas, con su directorio `/home/alumno_lab` y shell interactivo.
 * El usuario `sinhome` no tiene home ni acceso a la terminal (`nologin`), por lo que está bloqueado.
@@ -24,7 +24,7 @@
 
 ---
 
-## 2️⃣ Archivos y permisos
+## Archivos y permisos
 
 **Archivos inspeccionados en `/opt/lab_exercise`:**
 
@@ -34,7 +34,7 @@
 | `/opt/lab_exercise/public.txt`    | `alumno_lab:alumno_lab` | `777`                | Demasiado abierto (riesgo)       |
 | `/opt/lab_exercise/important.cfg` | `root:root`             | `644` + atributo `i` | Inmutable (no puede modificarse) |
 
-🔍 **Análisis:**
+ **Análisis:**
 
 * Se cambió el propietario de algunos archivos a `root`, posiblemente por error.
 * `public.txt` con permiso `777` es un riesgo, ya que cualquier usuario puede modificarlo o borrar información.
@@ -42,7 +42,7 @@
 
 ---
 
-## 3️⃣ Cron jobs
+##  Cron jobs
 
 **Cron detectado:** `/etc/cron.d/lab_exercise`
 
@@ -50,7 +50,7 @@
 */5 * * * * root /usr/local/bin/trampa
 ```
 
-🔍 **Análisis:**
+ **Análisis:**
 
 * Se ejecuta cada 5 minutos como **root**, llamando al script `/usr/local/bin/trampa`.
 * Este cron deja rastros en `/var/log/lab_cron.log`.
@@ -58,7 +58,7 @@
 
 ---
 
-## 4️⃣ Configuración del sistema
+##  Configuración del sistema
 
 **Archivo:** `/etc/hosts`
 
@@ -76,7 +76,7 @@ Después del script:
 192.168.56.10 internal.lab.local
 ```
 
-🔍 **Análisis:**
+ **Análisis:**
 
 * El script redirige `www.google.com` a `127.0.0.1`, bloqueando el acceso real al sitio.
 * También agrega un dominio local `internal.lab.local`.
@@ -84,7 +84,7 @@ Después del script:
 
 ---
 
-## 5️⃣ Atributos especiales
+##  Atributos especiales
 
 **Archivo con atributo `immutable`:**
 
@@ -104,7 +104,7 @@ Salida:
 ----i-------- /opt/lab_exercise/important.cfg
 ```
 
-🔍 **Análisis:**
+ **Análisis:**
 
 * El atributo `i` impide modificar, borrar o mover el archivo.
 * Si se intenta editar o eliminar, el sistema devuelve:
@@ -113,7 +113,7 @@ Salida:
 
 ---
 
-## 6️⃣ Archivos de sistema
+##  Archivos de sistema
 
 **Archivo:** `/usr/local/bin/trampa`
 
@@ -126,7 +126,7 @@ echo "$(date) - Cron ejecutado correctamente" >> /var/log/lab_cron.log
 touch /tmp/lab_marker.txt
 ```
 
-🔍 **Análisis:**
+ **Análisis:**
 
 * El script se ejecuta periódicamente por el cron (cada 5 min).
 * Registra fecha/hora en `/var/log/lab_cron.log` y crea un marcador en `/tmp/lab_marker.txt`.
@@ -135,7 +135,7 @@ touch /tmp/lab_marker.txt
 
 ---
 
-## 7️⃣ Conclusiones y recomendaciones
+## Conclusiones y recomendaciones
 
 **Impacto en un sistema posta:**
 
