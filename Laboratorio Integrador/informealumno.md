@@ -17,7 +17,7 @@
 
  **Análisis:**
 
-* El usuario `alumno_lab` fue creado para pruebas, con su directorio `/home/alumno_lab` y shell interactivo.
+* El usuario `alumno_lab` fue creado para pruebas con su directorio `/home/alumno_lab` y shell interactivo.
 * El usuario `sinhome` no tiene home ni acceso a la terminal (`nologin`), por lo que está bloqueado.
 * `backup` parece ser un usuario de mantenimiento o copia, también con acceso bash.
 * Se detectaron nuevas líneas en `/etc/passwd` y `/etc/shadow` con estos usuarios.
