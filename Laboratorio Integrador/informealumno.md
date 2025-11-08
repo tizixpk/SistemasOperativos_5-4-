@@ -131,7 +131,6 @@ touch /tmp/lab_marker.txt
 * El script se ejecuta periódicamente por el cron (cada 5 min).
 * Registra fecha/hora en `/var/log/lab_cron.log` y crea un marcador en `/tmp/lab_marker.txt`.
 * Si se modifica este archivo, cualquier comando dentro podría ejecutarse como root por el cron.
-  ➡️ **Riesgo alto de seguridad.**
 
 ---
 
