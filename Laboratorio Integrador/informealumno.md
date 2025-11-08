@@ -7,7 +7,7 @@
 
 ## Usuarios
 
-**Usuarios nuevos creados:**
+**users nuevos creadoss: **
 
 | Usuario      | Home               | Shell               | Estado    |
 | ------------ | ------------------ | ------------------- | --------- |
@@ -26,19 +26,19 @@
 
 ## Archivos y permisos
 
-**Archivos inspeccionados en `/opt/lab_exercise`:**
+**aarchivos inspeccionados --------> `/opt/lab_exercise`:**
 
 | Archivo                           | Propietario             | Permisos             | Observación                      |
 | --------------------------------- | ----------------------- | -------------------- | -------------------------------- |
-| `/opt/lab_exercise/secret.txt`    | `root:root`             | `600`                | Solo root puede leerlo           |
-| `/opt/lab_exercise/public.txt`    | `alumno_lab:alumno_lab` | `777`                | Demasiado abierto (riesgo)       |
-| `/opt/lab_exercise/important.cfg` | `root:root`             | `644` + atributo `i` | Inmutable (no puede modificarse) |
+| `/opt/lab_exercise/secret.txt`    | `root:root`             | `600`                | Solo root lee |
+| `/opt/lab_exercise/public.txt`    | `alumno_lab:alumno_lab` | `777`                | Demasiado abierto , re riesgoso |
+| `/opt/lab_exercise/important.cfg` | `root:root`             | `644` + atributo `i` | Inmutable , osea no puede modificarse |
 
- **Análisis:**
+ **Analisis:**
 
-* Se cambió el propietario de algunos archivos a `root`, posiblemente por error.
-* `public.txt` con permiso `777` es un riesgo, ya que cualquier usuario puede modificarlo o borrar información.
-* `important.cfg` tiene el atributo `immutable`, por lo que no puede editarse ni eliminarse hasta quitarle el flag (`sudo chattr -i`).
+* Se cambió el propietario de algunos archivos a `root`, posiblemente por error porque no tiene sentido.
+* `public.txt` con permiso `777`, cualquier usuario puede modificarlo o borrar información.
+* `important.cfg` tiene el atributo `immutable`, osea no puede editarse ni eliminarse hasta quitarle el flag (`sudo chattr -i`).
 
 ---
 
@@ -54,7 +54,7 @@
 
 * Se ejecuta cada 5 minutos como **root**, llamando al script `/usr/local/bin/trampa`.
 * Este cron deja rastros en `/var/log/lab_cron.log`.
-* Riesgo: cualquier modificación en `/usr/local/bin/trampa` podría ejecutarse con permisos administrativos.
+*  cualquier modificación en `/usr/local/bin/trampa` podría ejecutarse con permisos administrativos.
 
 ---
 
@@ -80,7 +80,7 @@ Después del script:
 
 * El script redirige `www.google.com` a `127.0.0.1`, bloqueando el acceso real al sitio.
 * También agrega un dominio local `internal.lab.local`.
-* Esto podría usarse para simular entornos internos o, en casos maliciosos, para redirigir tráfico de usuarios.
+* se podria usar para simular entornos internos o  para redirigir tráfico de usuarios .
 
 ---
 
