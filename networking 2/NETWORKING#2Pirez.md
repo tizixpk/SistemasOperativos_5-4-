@@ -83,10 +83,12 @@ PARTE #2
 
 Aplicar regla de NAT para tener acceso a internet
 
-´´´/ip firewall nat add chain=srcnat out-interface=ether1 action=masquerade
-chain=srcnat se aplica a tráfico saliente.
-out-interface=ether1 define la interfaz que sale a Internet.
-action=masquerade oculta las IP privadas detrás de la IP pública del router.´´´
+#### /ip firewall nat add chain=srcnat out-interface=ether1 action=masquerade chain=srcnat 
+##### se aplica a tráfico saliente.
+#### out-interface=ether1 
+###### define la interfaz que sale a Internet.
+#### action=masquerade 
+##### oculta las IP privadas detrás de la IP pública del router. ´´´
 
 <img width="637" height="33" alt="image" src="https://github.com/user-attachments/assets/ad8332e5-684c-44bb-a9ef-e1f0dd167481" />
 
