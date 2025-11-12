@@ -84,7 +84,7 @@ PARTE #2
 Aplicar regla de NAT para tener acceso a internet
 
 #### /ip firewall nat add chain=srcnat out-interface=ether1 action=masquerade chain=srcnat 
-##### se aplica a tráfico saliente.
+###### se aplica a tráfico saliente.
 #### out-interface=ether1 
 ###### define la interfaz que sale a Internet.
 #### action=masquerade 
@@ -117,15 +117,15 @@ Establecer una ruta estática en la PC física para tener acceso a la red LAN vi
 
 Verificar conectividad usando el comando ping desde la PC física a cualquier dispositivo final de la LAN virtual
 
-route add 192.168.3.0 mask 255.255.255.0 192.168.1.254 -p
-192.168.3.0 red LAN virtual
-255.255.255.0 máscara de la red LAN
-192.168.1.254 dirección del router (gateway) IMPORTANTE Esta direccion es la de tu red. No NECESARIAMENTE ES LA MISMA
--p → hace que la ruta sea persistente después de reiniciar (OPCIONAL)
+#### route add 192.168.3.0 mask 255.255.255.0 192.168.1.254 -p
+###### 192.168.3.0 red LAN virtual
+###### 255.255.255.0 máscara de la red LAN
+##### 192.168.1.254 dirección del router (gateway) IMPORTANTE Esta direccion es la de tu red. No NECESARIAMENTE ES LA MISMA
+##### -p → hace que la ruta sea persistente después de reiniciar (OPCIONAL)
 
 En Linux
 
-sudo ip route add 192.168.10.0/24 via 192.168.1.254
+### sudo ip route add 192.168.10.0/24 via 192.168.1.254
 
 Windows (PC Física):
 
