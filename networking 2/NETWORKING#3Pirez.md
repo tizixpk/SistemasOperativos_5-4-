@@ -18,8 +18,8 @@ Acceder desde Internet a un equipo de una red LAN no es posible por defecto ya q
 
 ## 1. Elementos necesarios para este laboratorio
 
-* MikroTik o equipo con RouterOS conectado a Internet
-* Laboratorio Networking 1 y 2 (pre-requisitos)
+* MikroTik 
+* Laboratorio Networking 1 y 2 
 
 ---
 
