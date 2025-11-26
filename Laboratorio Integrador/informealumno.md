@@ -40,7 +40,7 @@ Durante la ejecución del script aparecen varios archivos:
 | `immutable_note.txt`         | root:root     | 644 + i | Marcado como inmutable. |
 
 ### Comentario
-- El directorio `tmp_public` está abierto para todos pero con sticky bit.  
+- El directorio `tmp_public` está abierto para todos pero con sticky bit (solo el dueño del archivo o el root puedan borrar o renombrar archivos dentro del directorio)
 - `owner_mismatch.txt` probablemente es para practicar detección de problemas de permisos.  
 - El archivo `immutable_note.txt` tiene el flag `i` y no se puede editar ni borrar hasta usar `chattr -i`.
 
