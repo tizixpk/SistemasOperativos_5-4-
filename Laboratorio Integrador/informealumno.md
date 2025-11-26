@@ -48,12 +48,12 @@ Durante la ejecución del script aparecen varios archivos:
 
 ## 3. Cron configurado
 
-Se crea el archivo:
-/etc/cron.d/lab_exercise
+**Se crea el archivo:**
+'/etc/cron.d/lab_exercise'
 
 Con el contenido:
 
-	•		•		•		•		•	root echo “cron_mark: $(date -Iseconds)” >> /var/tmp/lab_cron_marker.txt
+root echo “cron_mark: $(date -Iseconds)” >> /var/tmp/lab_cron_marker.txt
 
 ### Comentario
 - Corre **una vez por minuto**.  
