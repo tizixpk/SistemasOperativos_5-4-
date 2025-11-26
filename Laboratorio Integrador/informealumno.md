@@ -97,3 +97,44 @@ sudo chattr -i immutable_note.txt
 
 ---
 
+Aquí tienes el archivo completo en formato Markdown listo para copiar y pegar, sin texto extra.
+
+⸻
+
+
+## 6. Script “trampa”
+
+**Contenido:**
+
+`/usr/local/bin/trampa`
+
+**Contenido:**
+```bash
+#!/usr/bin/env bash
+echo "Pista: revisa permisos y cron." > /tmp/pista_trampa.txt
+exit 0
+```
+
+**Comentario**
+- Solo escribe una pista dentro de /tmp.
+- No tiene relación con el cron.
+- Permisos 755, cualquiera lo puede ejecutar.
+
+***
+
+## 7. Conclusiones
+- El script agrega usuarios, archivos y un cron básico sin mucho riesgo.
+- La parte más sensible es el cambio en /etc/hosts, que puede confundir resoluciones DNS.
+- El atributo immutable es útil pero puede trabar tareas si se aplica sin querer.
+- Buen ejercicio para entender permisos, enlaces simbólicos y cron jobs.
+
+***
+
+## 8. Estado final del sistema
+
+Después de ejecutar `lab_cleanup.sh`:
+- Usuarios → eliminados.
+- Cron → borrado.
+- `/etc/hosts` → restaurado.
+- Carpeta `/opt/lab_exercise` → eliminada.
+- Todo confirmado en `/var/log/lab_changes.log`.
