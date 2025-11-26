@@ -105,33 +105,27 @@ Se crea el archivo:
 
 Contenido:
 
-```bash
+``` bash
 #!/usr/bin/env bash
 echo "Pista: revisa permisos y cron." > /tmp/pista_trampa.txt
-exit 0
+exit 0 ''' 
 
 Comentario
 	•	Solo escribe una pista dentro de /tmp.
 	•	No tiene relación con el cron.
 	•	Permisos 755, cualquiera lo puede ejecutar.
 
-⸻
+---
 
-7. Conclusiones
+### 7. Conclusiones
 	•	El script agrega usuarios, archivos y un cron básico sin mucho riesgo.
 	•	La parte más sensible es el cambio en /etc/hosts, que puede confundir resoluciones DNS.
 	•	El atributo immutable es útil pero puede trabar tareas si se aplica sin querer.
 	•	Buen ejercicio para entender permisos, enlaces simbólicos y cron jobs.
 
-Recomendaciones rápidas
-	•	Revisar permisos antes y después de correr scripts de administración.
-	•	Controlar los cron jobs creados por terceros.
-	•	Siempre revisar /etc/hosts después de prácticas o pruebas.
-	•	Hacer snapshots o backups antes de correr scripts que modifican el sistema.
-
 ⸻
 
-8. Estado final del sistema
+### 8. Estado final del sistema
 
 Después de ejecutar lab_cleanup.sh:
 	•	Usuarios → eliminados.
