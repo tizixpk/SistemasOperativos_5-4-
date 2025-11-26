@@ -99,7 +99,6 @@ sudo chattr -i immutable_note.txt
 
 ---
 
-Aquí tienes el archivo completo en formato Markdown listo para copiar y pegar, sin texto extra.
 
 ⸻
 
