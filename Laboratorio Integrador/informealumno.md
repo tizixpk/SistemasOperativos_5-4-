@@ -1,6 +1,6 @@
 # Informe del Laboratorio Integrador
 
-**Alumno:** Tiziano Pirez  
+**Alumno:** Tiziano Pirez y Elias Rod  
 **Curso:** 5° 4°  
 **Fecha:** 27/10/2025  
 **SO usado:** Ubuntu Linux (VM)
