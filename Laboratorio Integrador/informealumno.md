@@ -127,7 +127,6 @@ exit 0
 - El script agrega usuarios, archivos y un cron básico sin mucho riesgo.
 - La parte más sensible es el cambio en /etc/hosts, que puede confundir resoluciones DNS.
 - El atributo immutable es útil pero puede trabar tareas si se aplica sin querer.
-- Buen ejercicio para entender permisos, enlaces simbólicos y cron jobs.
 
 ***
 
