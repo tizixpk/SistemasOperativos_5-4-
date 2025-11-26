@@ -53,7 +53,9 @@ Durante la ejecución del script aparecen varios archivos:
 
 Con el contenido:
 
-root echo “cron_mark: $(date -Iseconds)” >> /var/tmp/lab_cron_marker.txt
+Con el contenido:
+
+	•		•		•		•		•	root echo “cron_mark: $(date -Iseconds)” >> /var/tmp/lab_cron_marker.txt
 
 ### Comentario
 - Corre **una vez por minuto**.  
