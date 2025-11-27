@@ -4,7 +4,7 @@
 
 **Listar usuarios agregados recientemente:**
 
-`tail -n 5 /etc/passwd `
+`tail -n 5 /etc/passwd ` o `Cat /etc/passwd`
 
 `getent passwd | grep alumno`
 
@@ -14,7 +14,7 @@
 
 **Confirmar si alguna cuenta está bloqueada:**
 
-`sudo passwd -S alumno2`
+`sudo passwd -S alumno2` -----> si aparece L ( bloqueada)
 
 **Verificar la existencia del usuario sin home:**
 
