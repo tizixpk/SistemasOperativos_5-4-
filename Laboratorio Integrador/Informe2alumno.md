@@ -14,7 +14,7 @@
 
 **Confirmar si alguna cuenta está bloqueada:**
 
-`sudo passwd -S alumno2` -----> si aparece L ( bloqueada)
+`sudo passwd -S alumno2` -----> si aparece L ( bloqueada), P ( abierto )
 
 **Verificar la existencia del usuario sin home:**
 
