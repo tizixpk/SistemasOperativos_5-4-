@@ -25,6 +25,9 @@
 
 `sudo passwd -S alumno2` -----> si aparece L ( bloqueada), P ( abierto )
 
+<img width="673" height="45" alt="{0D85EABF-BA61-464B-951E-57EFBD07071B}" src="https://github.com/user-attachments/assets/ac5356b0-5aea-4129-8ae1-9b00712a66c2" />
+
+
 **Verificar la existencia del usuario sin home:**
 
 `getent passwd nohome_user`
