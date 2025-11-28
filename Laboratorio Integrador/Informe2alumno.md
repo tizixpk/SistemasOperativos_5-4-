@@ -4,12 +4,12 @@
 
 **Listar usuarios agregados recientemente:**
 
-`tail -n 5 /etc/passwd ` o `Cat /etc/passwd`
+`tail -n 5 /etc/passwd ` o `Cat /etc/passwd` 
 
 <img width="818" height="154" alt="{2F35E665-9B76-4400-894E-3A6885CFEB51}" src="https://github.com/user-attachments/assets/66b432c1-834c-451f-b00c-c55ee46cdd5f" />
 
 
-`getent passwd | grep alumno`
+`getent passwd | grep alumno` -----> hace una lista de los usuarios alumno
 
 <img width="735" height="72" alt="{6468EAAA-AD46-4058-B6D3-33AF7C9DC6B9}" src="https://github.com/user-attachments/assets/57f7732b-0b2e-4d5a-a8b4-a57dc183d658" />
 
