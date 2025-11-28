@@ -52,7 +52,7 @@
 
 **Revisar permisos y propietarios:**
 
-`stat /opt/lab_exercise/root_only.txt`
+`stat /opt/lab_exercise/root_only.txt` -------> no puse cap pero el --rw q hay significa q pertenece a root y tiene permisos solo para root y pertenece fecha y hora
 
 `stat /opt/lab_exercise/owner_mismatch.txt`
 
