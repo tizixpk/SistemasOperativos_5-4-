@@ -30,7 +30,10 @@
 
 **Verificar la existencia del usuario sin home:**
 
-`getent passwd nohome_user`
+`getent passwd nohome_user`   ------> aparece que tiene home y bin y bash
+
+<img width="682" height="44" alt="{C6E6612C-D916-4A9B-8A30-852A946F0426}" src="https://github.com/user-attachments/assets/36e43014-f456-4b45-9a04-f8a932877aa5" />
+
 
 ### Archivos y permisos
 
