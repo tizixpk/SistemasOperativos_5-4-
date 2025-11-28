@@ -40,9 +40,15 @@
 
 **Listar archivos en la carpeta creada:**
 
-`ls -la /opt/lab_exercise`
+`ls -la /opt/lab_exercise` ------>  muestra todos los archivos y directorios, incluidos ocultos, con sus permisos, dueños y tipo dentro de esa carpeta.
 
-`find /opt/lab_exercise -ls`
+<img width="815" height="244" alt="{A14D80D2-5CA8-4979-8506-DF855181D523}" src="https://github.com/user-attachments/assets/8542dc17-ff96-42c2-9501-e655d716b1d0" />
+
+
+`find /opt/lab_exercise -ls` -----> busca y lista todo, muestra detalles completos de cada archivo: permisos, dueño, tamaño, fecha y ruta.
+
+<img width="1288" height="224" alt="{8F67A4CB-C367-474A-85C2-FD67AA6A315C}" src="https://github.com/user-attachments/assets/cc08c98a-f3a6-4e44-ab4d-9cebfa669bb1" />
+
 
 **Revisar permisos y propietarios:**
 
