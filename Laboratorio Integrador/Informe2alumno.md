@@ -11,6 +11,9 @@
 
 `getent passwd | grep alumno`
 
+<img width="735" height="72" alt="{6468EAAA-AD46-4058-B6D3-33AF7C9DC6B9}" src="https://github.com/user-attachments/assets/57f7732b-0b2e-4d5a-a8b4-a57dc183d658" />
+
+
 **Verificar si tienen directorio home:**
 
 `ls /home`
