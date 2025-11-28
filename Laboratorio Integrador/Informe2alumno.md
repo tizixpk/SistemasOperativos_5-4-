@@ -16,7 +16,10 @@
 
 **Verificar si tienen directorio home:**
 
-`ls /home`
+`ls /home` -------> abajo en la cap se ve que solo alumno 1 y alumno 2 tienen home
+
+<img width="558" height="44" alt="{232B94C7-3D51-4FF5-8F0D-FF138404C20B}" src="https://github.com/user-attachments/assets/a440d5ca-b212-4b85-8a38-0eaf7dee8630" />
+
 
 **Confirmar si alguna cuenta está bloqueada:**
 
