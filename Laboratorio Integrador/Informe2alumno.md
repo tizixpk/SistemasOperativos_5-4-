@@ -6,6 +6,9 @@
 
 `tail -n 5 /etc/passwd ` o `Cat /etc/passwd`
 
+<img width="818" height="154" alt="{2F35E665-9B76-4400-894E-3A6885CFEB51}" src="https://github.com/user-attachments/assets/66b432c1-834c-451f-b00c-c55ee46cdd5f" />
+
+
 `getent passwd | grep alumno`
 
 **Verificar si tienen directorio home:**
