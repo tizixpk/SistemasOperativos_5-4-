@@ -1,24 +1,15 @@
 ---
 
-# ✅ Verificaciones adicionales 
+#  Verificaciones adicionales 
 
 ---
 
 ## **1. Verificar el sticky-bit del directorio `tmp_public`**
-
-### **Enunciado**
-
 Comprobar si el directorio `/opt/lab_exercise/tmp_public` tiene el **sticky-bit (modo 1777)**.
-
-### **Comando**
 
 ```bash
 stat /opt/lab_exercise/tmp_public
 ```
-
-### **Explicación**
-
-En "Access: (1777/...)" debe verse:
 
 * **1** = sticky-bit
 * **7 7 7** = permisos rwx para todos
@@ -27,19 +18,12 @@ En "Access: (1777/...)" debe verse:
 ---
 
 ## **2. Verificar los enlaces simbólicos con `readlink`**
-
-### **Enunciado**
-
 Mostrar hacia dónde apuntan los enlaces simbólicos creados.
-
-### **Comandos**
 
 ```bash
 readlink /opt/lab_exercise/broken_link
 readlink /opt/lab_exercise/link_to_mismatch
 ```
-
-### **Explicación**
 
 * Si el destino **no existe**, es un enlace roto.
 * `readlink` muestra la **ruta real del objetivo** del link.
@@ -47,43 +31,29 @@ readlink /opt/lab_exercise/link_to_mismatch
 ---
 
 ## **3. Confirmar que `nohome_user` realmente NO tiene home**
-
-### **Enunciado**
-
 Verificar que el usuario creado sin home efectivamente no tenga directorio personal.
-
-### **Comando**
 
 ```bash
 getent passwd nohome_user
 ```
 
-### **Explicación**
-
 Debe mostrar algo como:
 
-```
-nohome_user:x:1003:1003::/home:/bin/bash
-```
+<img width="453" height="105" alt="{3696399D-9168-43EB-9CDB-4FF6482E6CDC}" src="https://github.com/user-attachments/assets/306b8288-aaea-43f1-aca9-4d92b118658f" />
 
-El campo entre los dos últimos ":" debería estar **vacío o "/"**, indicando **sin directorio home**.
+si tuviera home diria asi: 
+
+<img width="527" height="96" alt="{8B071D8D-7DF0-4603-A612-0A03E2CB28E3}" src="https://github.com/user-attachments/assets/2013ffa6-a3ee-4d93-826b-fa7b27b5ef51" />
 
 ---
 
 ## **4. Verificar atributo inmutable + probar borrado**
-
-### **Enunciado**
-
 Comprobar si `immutable_note.txt` tiene atributo **+i** (no se puede borrar ni editar).
-
-### **Comandos**
 
 ```bash
 lsattr /opt/lab_exercise/immutable_note.txt
 sudo rm /opt/lab_exercise/immutable_note.txt
 ```
-
-### **Explicación**
 
 * `lsattr` mostrará:
 
@@ -101,18 +71,12 @@ sudo rm /opt/lab_exercise/immutable_note.txt
 ---
 
 ## **5. Buscar trazas del laboratorio en todo el sistema**
-
-### **Enunciado**
-
 Listar cualquier archivo relacionado con el laboratorio.
 
-### **Comando**
 
 ```bash
 sudo find / -name "*lab*" 2>/dev/null
 ```
-
-### **Explicación**
 
 Permite encontrar:
 
@@ -125,18 +89,11 @@ Permite encontrar:
 ---
 
 ## **6. Revisar permisos del directorio principal del laboratorio**
-
-### **Enunciado**
-
 Comprobar permisos, dueño y grupo del directorio `/opt/lab_exercise`.
-
-### **Comando**
 
 ```bash
 stat /opt/lab_exercise
 ```
-
-### **Explicación**
 
 Debe mostrar:
 
@@ -147,19 +104,12 @@ Debe mostrar:
 ---
 
 ## **7. Obtener "stats" importantes de archivos clave**
-
-### **Enunciado**
-
 Ver permisos completos, dueño, grupo, tamaño y fechas.
-
-### **Comandos**
 
 ```bash
 stat /opt/lab_exercise/root_only.txt
 stat /opt/lab_exercise/owner_mismatch.txt
 ```
-
-### **Explicación**
 
 Estos comandos confirman:
 
@@ -171,9 +121,9 @@ Estos comandos confirman:
 
 ---
 
-# 📌 Resumen de permisos (chmod)
+# 📌 permisos (chmod)
 
-**Explicado ultra resumido para examen**
+**Explicado ultra resumido**
 
 | Número | Significado | Qué permite         |
 | ------ | ----------- | ------------------- |
@@ -188,7 +138,7 @@ Estos comandos confirman:
 
 ---
 
-# 📌 Explicación de permisos típicos
+# permisos típicos
 
 ## **660**
 
