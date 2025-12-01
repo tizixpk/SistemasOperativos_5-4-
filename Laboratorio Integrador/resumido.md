@@ -1,5 +1,6 @@
 # Script Trampa
 ejecutar en terminal: "trampa"
+
 luego ver que escribio: "cat /tmp/pista_trampa.txt"
 
 ## que esta pidiendo? ---> q revise permisos y todo lo q hizo el script osea:
