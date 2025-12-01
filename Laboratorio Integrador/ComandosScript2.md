@@ -189,4 +189,12 @@ rwxr-xr-x
 
 ---
 
+# que me pide  q revise el script trampa?
+Permisos, dueños y atributos raros en /opt/lab_exercise
+Sticky bit del directorio tmp_public
+Archivos creados con chattr +i (inmodificables)
+Enlaces simbólicos, uno roto y uno válido
+El cron job activo, verificando que escribe cada minuto en /var/tmp
+El usuario sin home (nohome_user)
+El archivo secreto de alumno2 con 600
 
